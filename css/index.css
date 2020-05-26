@@ -132,18 +132,245 @@ table {
 html {
   font-size: 62.5%;
 }
+@font-face {
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Courgette Regular'), local('Courgette-Regular'), url(https://fonts.gstatic.com/s/courgette/v7/wEO_EBrAnc9BLjLQAUkFUQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Noto Serif Bold'), local('NotoSerif-Bold'), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Law1J5X9T9RW6j9bNdOwzTRA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Poppins Light'), local('Poppins-Light'), url(https://fonts.gstatic.com/s/poppins/v9/pxiByp8kv8JHgFVrLDz8V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v9/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url(https://fonts.gstatic.com/s/poppins/v9/pxiByp8kv8JHgFVrLEj6V1s.ttf) format('truetype');
+}
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: "Indie Flower", cursive;
+  font-family: "Poppins", sans-serif;
 }
-header {
-  background-color: orange;
-  font-size: 3rem;
+h1 {
+  line-height: 5rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+a {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.navigation-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 30px 4rem;
+  border-bottom: 2px solid #c0c0c0;
+}
+.navigation-bar .navleft {
+  width: 30rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-bar .navleft a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 2rem;
+}
+.navigation-bar .navleft .logo {
+  font-family: "Courgette", cursive;
+  font-size: 2.5rem;
+  color: #212529;
+}
+.navigation-bar .navright a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 2rem;
+}
+.top-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50vh;
+}
+.top-section .section-text {
+  width: 45%;
+}
+.top-section .section-text h1 {
+  line-height: 5rem;
+  font-size: 3.5rem;
+}
+.top-section .section-text p {
+  line-height: 2.5rem;
+}
+.top-section .section-img {
+  width: 500px;
+}
+.top-section img {
+  width: 100%;
+  border-radius: 2rem;
+}
+.middle-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50vh;
+}
+.middle-section .section-text {
+  width: 45%;
+}
+.middle-section .section-text h2 {
+  margin-bottom: 1rem;
+}
+.middle-section .section-text p {
+  line-height: 2.5rem;
+}
+.middle-section .section-img {
+  width: 500px;
+}
+.middle-section img {
+  width: 100%;
+  border-radius: 2rem;
+  border: solid 1px #212529;
+}
+.section-meet-team {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50vh;
+}
+.section-meet-team .left-title {
+  line-height: 2.5rem;
+}
+.section-meet-team .left-title h2 {
+  margin-bottom: 1rem;
+}
+.section-meet-team .left-title a {
+  text-decoration: none;
+}
+.section-meet-team .section-text {
+  width: 45%;
+}
+.section-meet-team .section-text h2 {
+  margin-bottom: 1rem;
+}
+.section-meet-team .section-text p {
+  line-height: 2.5rem;
+}
+.product-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60px;
+  padding-left: 4rem;
+}
+.product-footer p {
+  margin: 2rem;
+  font-family: "Courgette", cursive;
+  font-size: 2.5rem;
+  color: #212529;
+}
+.product-footer a {
+  margin: 2rem;
+  text-decoration: none;
+  color: #212529;
+}
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media (max-width: 1400px) {
+  .container {
+    margin: 0 10rem;
+  }
+}
+.team-section-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+}
+.team-section-top p {
+  width: 45%;
+  line-height: 2.5rem;
+}
+@media (max-width: 1400px) {
+  .team-section-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .team-section-top p {
+    min-width: 600px;
+    min-height: 175px;
+    margin: 30px;
+  }
+}
+.team-section-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.team-section-cards .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 500px;
+  margin: 3rem;
+  margin-bottom: 4rem;
+  padding: 3rem 4rem;
+  border: 1px solid #212529;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.team-section-cards .card img {
+  border-radius: 50%;
+  width: 10rem;
+}
+.team-section-cards .card p {
+  padding-left: 3rem;
 }
