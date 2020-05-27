@@ -4,13 +4,17 @@
   justify-content: space-between;
   align-items: center;
   min-height: 50vh;
-  //   border-bottom: 2px solid @silver;
 
   .section-text {
     width: 45%;
     h1 {
       line-height: 5rem;
       font-size: 3.5rem;
+      padding-right: 2rem;
+
+      .highlight {
+        color: @yellow;
+      }
     }
     p {
       line-height: 2.5rem;
@@ -23,6 +27,37 @@
   img {
     width: 100%;
     border-radius: 2rem;
+  }
+
+  @media @desktop {
+    .section-text {
+      padding-right: 6rem;
+    }
+  }
+  @media @tablet {
+    flex-direction: column;
+    .section-text {
+      width: 80%;
+      padding: 8rem 0;
+      align-content: center;
+      text-align: center;
+    }
+    .section-img {
+      padding-bottom: 8rem;
+      width: 50rem;
+    }
+  }
+  @media @mobile {
+    .section-text {
+      width: 100%;
+      h1 {
+        width: 100%;
+        font-size: 3.5rem;
+      }
+    }
+    .section-img {
+      width: 100%;
+    }
   }
 }
 
@@ -32,7 +67,6 @@
   justify-content: space-between;
   align-items: center;
   min-height: 50vh;
-  //   border-bottom: 2px solid @silver;
 
   .section-text {
     width: 45%;
@@ -50,7 +84,26 @@
   img {
     width: 100%;
     border-radius: 2rem;
-    border: solid 1px @black;
+  }
+
+  @media @desktop {
+    .section-text {
+      padding-left: 6rem;
+    }
+  }
+  @media @tablet {
+    flex-direction: column-reverse;
+
+    .section-text {
+      width: 100%;
+      padding: 8rem 0;
+      align-content: center;
+    }
+  }
+  @media @mobile {
+    .section-img {
+      width: 100%;
+    }
   }
 }
 
@@ -60,25 +113,56 @@
   justify-content: space-between;
   align-items: center;
   min-height: 50vh;
-  //   border-bottom: 2px solid @silver;
 
-  .left-title {
+  .meet-team-section-title {
     line-height: 2.5rem;
+
     h2 {
       margin-bottom: 1rem;
+      line-height: 2.5rem;
     }
     a {
       text-decoration: none;
+      .custom-btn(@blue, @white, @btn-padding:15px 20px);
     }
   }
 
-  .section-text {
-    width: 45%;
+  .meet-team-section-text {
+    width: 430px;
     h2 {
       margin-bottom: 1rem;
     }
     p {
       line-height: 2.5rem;
+    }
+    @media @desktop {
+      p {
+        padding-right: 6rem;
+      }
+    }
+    @media @tablet {
+      p {
+        padding-right: 0rem;
+      }
+    }
+  }
+  @media @tablet {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+
+    .meet-team-section-text {
+      padding-top: 8rem;
+    }
+
+    .meet-team-section-title {
+      padding-top: 8rem;
+    }
+  }
+  @media @mobile {
+    .meet-team-section-text {
+      width: 100%;
     }
   }
 }
@@ -100,5 +184,23 @@
     margin: 2rem;
     text-decoration: none;
     color: @black;
+  }
+  @media @mobile {
+    flex-direction: column;
+    padding-left: 0;
+
+    p {
+      font-size: 3.5rem;
+    }
+    a {
+      margin: 0;
+    }
+    .footer-btn-1 {
+      padding: 1rem;
+    }
+    .footer-btn-2 {
+      padding: 1rem;
+      padding-bottom: 3rem;
+    }
   }
 }

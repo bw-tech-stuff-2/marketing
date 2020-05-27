@@ -1,3 +1,4 @@
+//!move this to new page
 .container {
   max-width: 1200px;
   display: flex;
@@ -7,6 +8,9 @@
   @media @desktop {
     margin: 0 10rem;
   }
+  @media @mobile {
+    margin: 0 20px;
+  }
 }
 
 .team-section-top {
@@ -14,7 +18,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  height: 50vh;
+  min-height: 50vh;
   //   border-bottom: 2px solid @silver;
 
   p {
@@ -29,6 +33,14 @@
       min-width: 600px;
       min-height: 175px;
       margin: 30px;
+    }
+  }
+
+  @media @mobile {
+    p {
+      min-width: 0;
+      margin: 0;
+      width: 100%;
     }
   }
 }
@@ -50,13 +62,26 @@
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     img {
-      //   margin: 1rem;
       border-radius: 50%;
       width: 10rem;
     }
 
     p {
       padding-left: 3rem;
+    }
+
+    @media @mobile {
+      //!continue here with formatting cards
+      flex-direction: column;
+
+      h3 {
+        padding-top: 2rem;
+      }
+
+      p {
+        padding-left: 0;
+        padding-top: 2rem;
+      }
     }
   }
 }
