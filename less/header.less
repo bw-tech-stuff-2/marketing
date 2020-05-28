@@ -24,6 +24,14 @@
           text-decoration: none;
           margin-left: 3rem;
         }
+
+        a:last-child {
+          margin-right: 3rem;
+
+          @media (max-width: 641px) {
+            margin-right: 0;
+          }
+        }
       }
 
       .header-btn {
@@ -38,9 +46,10 @@
       color: @black;
       margin-left: 0;
       text-decoration: none;
+      min-width: 156px;
     }
 
-    @media @mobile {
+    @media (max-width: 641px) {
       flex-direction: column;
 
       a {
