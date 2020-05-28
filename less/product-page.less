@@ -1,3 +1,17 @@
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media @desktop {
+    margin: 0 10rem;
+  }
+  @media @mobile {
+    margin: 0 20px;
+  }
+}
+
 .top-section {
   display: flex;
   flex-direction: row;
@@ -164,44 +178,6 @@
   @media @mobile {
     .meet-team-section-text {
       width: 100%;
-    }
-  }
-}
-
-.product-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  height: 60px;
-  padding-left: 4rem;
-  p {
-    margin: 2rem;
-    font-family: "Courgette", cursive;
-    font-size: 2.5rem;
-    color: @black;
-  }
-  a {
-    margin: 2rem;
-    text-decoration: none;
-    color: @black;
-  }
-  @media @mobile {
-    flex-direction: column;
-    padding-left: 0;
-
-    p {
-      font-size: 3.5rem;
-    }
-    a {
-      margin: 0;
-    }
-    .footer-btn-1 {
-      padding: 1rem;
-    }
-    .footer-btn-2 {
-      padding: 1rem;
-      padding-bottom: 3rem;
     }
   }
 }

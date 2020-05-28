@@ -277,6 +277,22 @@ a {
     padding-top: 1rem;
   }
 }
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media (max-width: 1400px) {
+  .container {
+    margin: 0 10rem;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    margin: 0 20px;
+  }
+}
 .top-section {
   display: flex;
   flex-direction: row;
@@ -451,60 +467,6 @@ a {
     width: 100%;
   }
 }
-.product-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  height: 60px;
-  padding-left: 4rem;
-}
-.product-footer p {
-  margin: 2rem;
-  font-family: "Courgette", cursive;
-  font-size: 2.5rem;
-  color: #010400;
-}
-.product-footer a {
-  margin: 2rem;
-  text-decoration: none;
-  color: #010400;
-}
-@media (max-width: 600px) {
-  .product-footer {
-    flex-direction: column;
-    padding-left: 0;
-  }
-  .product-footer p {
-    font-size: 3.5rem;
-  }
-  .product-footer a {
-    margin: 0;
-  }
-  .product-footer .footer-btn-1 {
-    padding: 1rem;
-  }
-  .product-footer .footer-btn-2 {
-    padding: 1rem;
-    padding-bottom: 3rem;
-  }
-}
-.container {
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-@media (max-width: 1400px) {
-  .container {
-    margin: 0 10rem;
-  }
-}
-@media (max-width: 600px) {
-  .container {
-    margin: 0 20px;
-  }
-}
 .team-section-top {
   display: flex;
   flex-direction: row;
@@ -587,5 +549,43 @@ a {
 @media (max-width: 498px) {
   .team-section-cards .card {
     flex-direction: column;
+  }
+}
+.product-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60px;
+  padding-left: 4rem;
+}
+.product-footer p {
+  margin: 2rem;
+  font-family: "Courgette", cursive;
+  font-size: 2.5rem;
+  color: #010400;
+}
+.product-footer a {
+  margin: 2rem;
+  text-decoration: none;
+  color: #010400;
+}
+@media (max-width: 600px) {
+  .product-footer {
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .product-footer p {
+    font-size: 3.5rem;
+  }
+  .product-footer a {
+    margin: 0;
+  }
+  .product-footer .footer-btn-1 {
+    padding: 1rem;
+  }
+  .product-footer .footer-btn-2 {
+    padding: 1rem;
+    padding-bottom: 3rem;
   }
 }
