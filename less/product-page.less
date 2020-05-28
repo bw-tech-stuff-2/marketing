@@ -1,0 +1,188 @@
+//container wraps all the content and keeps it centered on big displays
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media @desktop {
+    margin: 0 10rem;
+  }
+  @media @mobile {
+    margin: 0 20px;
+  }
+}
+
+//where it says tech is not cheap.. this is very first section
+.top-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50vh;
+
+  .section-text {
+    width: 45%;
+    h1 {
+      line-height: 5rem;
+      font-size: 3.5rem;
+      padding-right: 2rem;
+
+      .highlight {
+        //this is the yellow highlight on 'borrowing can be'
+        color: @yellow;
+      }
+    }
+    p {
+      line-height: 2.5rem;
+    }
+  }
+
+  .section-img {
+    width: 500px;
+  }
+  img {
+    width: 100%;
+    border-radius: 2rem;
+  }
+
+  @media @desktop {
+    .section-text {
+      padding-right: 6rem;
+    }
+  }
+  @media @tablet {
+    flex-direction: column;
+    .section-text {
+      width: 80%;
+      padding: 8rem 0;
+      align-content: center;
+      text-align: center;
+    }
+    .section-img {
+      padding-bottom: 8rem;
+      width: 50rem;
+    }
+  }
+  @media @mobile {
+    .section-text {
+      width: 100%;
+      h1 {
+        width: 100%;
+        font-size: 3.5rem;
+      }
+    }
+    .section-img {
+      width: 100%;
+    }
+  }
+}
+
+//'wondering how?' middle section
+.middle-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50vh;
+
+  .section-text {
+    width: 45%;
+    h2 {
+      margin-bottom: 1rem;
+    }
+    p {
+      line-height: 2.5rem;
+    }
+  }
+
+  .section-img {
+    width: 500px;
+  }
+  img {
+    width: 100%;
+    border-radius: 2rem;
+  }
+
+  @media @desktop {
+    .section-text {
+      padding-left: 6rem;
+    }
+  }
+  @media @tablet {
+    flex-direction: column-reverse;
+
+    .section-text {
+      width: 100%;
+      padding: 8rem 0;
+      align-content: center;
+    }
+  }
+  @media @mobile {
+    .section-img {
+      width: 100%;
+    }
+  }
+}
+
+//our mission and meet team button
+.section-meet-team {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50vh;
+
+  .meet-team-section-title {
+    line-height: 2.5rem;
+
+    h2 {
+      margin-bottom: 2rem;
+      line-height: 2.5rem;
+    }
+    a {
+      text-decoration: none;
+      .custom-btn(@blue, @white, @btn-padding:15px 20px);
+    }
+  }
+
+  .meet-team-section-text {
+    width: 430px;
+    h2 {
+      margin-bottom: 1rem;
+    }
+    p {
+      line-height: 2.5rem;
+    }
+
+    @media @desktop {
+      p {
+        padding-right: 6rem;
+      }
+    }
+    @media @tablet {
+      p {
+        padding-right: 0rem;
+      }
+    }
+  }
+  @media @tablet {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+
+    .meet-team-section-text {
+      padding-top: 8rem;
+    }
+
+    .meet-team-section-title {
+      padding-top: 8rem;
+    }
+  }
+  @media @mobile {
+    .meet-team-section-text {
+      width: 100%;
+    }
+  }
+}
